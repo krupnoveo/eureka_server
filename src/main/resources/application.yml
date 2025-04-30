@@ -1,0 +1,14 @@
+
+spring:
+  application:
+    name: EUREKA-SERVER
+
+  config:
+    import: optional:file:../.env[.properties]
+
+server:
+  port: ${eureka.service.port}
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
